@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Using Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="pieces.js"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <h1>Simple Chess Using Javascript</h1>
+    <div id="mode-selector">
+        <label for="mode">Select Game Mode:</label>
+        <select id="mode">
+            <option value="traditional">Traditional Chess</option>
+            <option value="chess960">Chess960</option>
+        </select>
+    </div>
+    <div id="gameboard"></div>
+    <div class="bars">
+        <p class="turnbar">It Is <span id="player"></span>'s Turn.</p>
+        <p class="infobar" id="info-display"></p>
+        <p class="errbar" id="err"></p>
+    </div>
+</body>
+</html>
